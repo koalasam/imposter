@@ -13,7 +13,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#0F0B1E"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.imposter.partygame",
@@ -52,7 +54,11 @@
     "extra": {
       "router": {
         "origin": false
+      },
+      "eas": {
+        "projectId": "f02fa67a-50c4-4499-b85b-190c50fd6aa2"
       }
-    }
+    },
+    "owner": "koala_sam"
   }
 }
