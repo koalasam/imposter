@@ -7,15 +7,15 @@ import { MIN_PLAYERS, clampImposterCount } from "@/game/engine";
 import { generateId } from "@/utils/random";
 
 /**
- * Default preferences for a brand-new install. Hints default to OFF: the
- * base "just tell me I'm the imposter" experience is the simplest/most
- * classic version of the game, and hints are an opt-in variant.
+ * Default preferences for a brand-new install. Hints default to ON, giving
+ * imposters a subtle clue out of the box; players can turn this off from
+ * the main menu if they want the classic no-hint experience.
  */
 const DEFAULT_SETTINGS: GameSettings = {
   players: [],
   selectedCategories: [ALL_CATEGORIES_ID],
   numberOfImposters: 1,
-  hintsEnabled: false,
+  hintsEnabled: true,
 };
 
 interface SettingsState extends GameSettings {

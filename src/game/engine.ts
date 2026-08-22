@@ -1,5 +1,5 @@
 import { GameRound, GameSettings, Player, Word } from "@/models/types";
-import { generateId, pickMany, pickOne, shuffle } from "@/utils/random";
+import { generateId, pickMany, pickOne } from "@/utils/random";
 import wordsData from "@/data/words.json";
 import { ALL_CATEGORIES_ID } from "@/models/types";
 
@@ -144,7 +144,9 @@ export function generateRound(
   const imposters = pickMany(settings.players, imposterCount);
   const imposterIds = imposters.map((p) => p.id);
 
-  const playerOrder = shuffle(settings.players).map((p) => p.id);
+  // Players always go through in the same order they appear in the main
+  // menu's player list, so the reveal order is predictable round to round.
+  const playerOrder = settings.players.map((p) => p.id);
   const startingPlayerId = pickOne(settings.players).id;
 
   return {

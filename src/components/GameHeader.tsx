@@ -25,8 +25,7 @@ export function GameHeader({ onConfirmLeave, title }: GameHeaderProps) {
         accessibilityLabel="Back to main menu"
         hitSlop={12}
       >
-        <Text style={styles.backArrow}>‹</Text>
-        <Text style={styles.backLabel}>Back</Text>
+        <Text style={styles.backArrow}>   {"<"}   </Text>
       </Pressable>
 
       {title ? (
@@ -84,14 +83,9 @@ const styles = StyleSheet.create({
     paddingRight: spacing.sm,
   },
   backArrow: {
-    color: colors.accentAlt,
-    fontSize: 28,
-    marginRight: -2,
-    marginTop: -2,
-  },
-  backLabel: {
     ...typography.bodyBold,
     color: colors.accentAlt,
+    fontSize: 20,
   },
   title: {
     ...typography.bodyBold,

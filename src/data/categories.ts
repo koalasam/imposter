@@ -14,15 +14,15 @@ import { Category } from "@/models/types";
  */
 export const CATEGORIES: Category[] = [
   { id: "animals", label: "Animals" },
+  { id: "brands", label: "Brands" },
+  { id: "celebrities", label: "Celebrities" },
   { id: "food", label: "Food" },
-  { id: "places", label: "Places" },
-  { id: "objects", label: "Objects" },
-  { id: "sports", label: "Sports" },
   { id: "movies", label: "Movies" },
   { id: "nature", label: "Nature" },
-  { id: "technology", label: "Technology" },
+  { id: "objects", label: "Objects" },
+  { id: "places", label: "Places" },
   { id: "professions", label: "Professions" },
-  { id: "transport", label: "Transport" },
+  { id: "sports", label: "Sports" },
 ];
 
 export const CATEGORY_IDS: string[] = CATEGORIES.map((c) => c.id);
