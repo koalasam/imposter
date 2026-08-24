@@ -16,6 +16,7 @@ export const CATEGORIES: Category[] = [
   { id: "animals", label: "Animals" },
   { id: "brands", label: "Brands" },
   { id: "celebrities", label: "Celebrities" },
+  { id: "concepts", lable: "Concepts"},
   { id: "food", label: "Food" },
   { id: "movies", label: "Movies" },
   { id: "nature", label: "Nature" },
