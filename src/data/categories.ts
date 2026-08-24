@@ -16,14 +16,18 @@ export const CATEGORIES: Category[] = [
   { id: "animals", label: "Animals" },
   { id: "brands", label: "Brands" },
   { id: "celebrities", label: "Celebrities" },
-  { id: "concepts", lable: "Concepts"},
+  { id: "concepts", label: "Concepts" },
   { id: "food", label: "Food" },
   { id: "movies", label: "Movies" },
+  { id: "music", label: "Music" },
   { id: "nature", label: "Nature" },
   { id: "objects", label: "Objects" },
   { id: "places", label: "Places" },
   { id: "professions", label: "Professions" },
+  { id: "school", label: "School" },
   { id: "sports", label: "Sports" },
+  { id: "technology", label: "Technology" },
 ];
+
 
 export const CATEGORY_IDS: string[] = CATEGORIES.map((c) => c.id);
